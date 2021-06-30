@@ -1,0 +1,128 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14416548571,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHook.initializeDriver(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "select lowest price item in cart",
+        "description": "",
+        "id": "test-cucumber-scripts;select-lowest-price-item-in-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 511713034,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHook.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12189840262,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I add four different products to my wish list",
+            "match": {
+              "location": "StepDef.search4Products()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2348139715,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I view my wishlist table",
+            "match": {
+              "location": "StepDef.viewWichList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13199009,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I  find total \"4\" selected items in my wishlist",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDef.validateMyWishList(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10774296,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search for the lowest price product",
+            "match": {
+              "location": "StepDef.searchLowestPriceItemInWishList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 125583955,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am able to add the lowest price item to my cart",
+            "match": {
+              "location": "StepDef.addLowestPriceItemToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 689407737,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am able to verify the item in my cart",
+            "match": {
+              "location": "StepDef.verifyAbleToCheckOut()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@test1"
+          }
+        ]
+      }
+    ],
+    "name": "Test Cucumber scripts",
+    "description": "",
+    "id": "test-cucumber-scripts",
+    "keyword": "Feature",
+    "uri": "Testing.feature"
+  }
+]

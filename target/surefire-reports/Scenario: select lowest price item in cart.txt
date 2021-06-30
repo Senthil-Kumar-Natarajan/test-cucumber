@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: select lowest price item in cart
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.856 s - in Scenario: select lowest price item in cart

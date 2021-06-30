@@ -1,0 +1,21 @@
+2021-06-30 22:06:174 INFO  ServiceHook:23 - ********************************* NEW TEST SCENARIO NAME: select lowest price item in cart ******************************
+
+2021-06-30 22:06:549 INFO  LoginPage:26 - Entered the URL successfully
+2021-06-30 22:06:426 INFO  StepDef:37 - Able to Add 4 products to WishList
+2021-06-30 22:06:186 INFO  WishListPage:67 - Product Item Detail:{}Top pants upper
+2021-06-30 22:06:268 INFO  WishListPage:67 - Product Item Detail:{}£22.00 – £89.00
+2021-06-30 22:06:378 INFO  WishListPage:67 - Product Item Detail:{}Single Shirt
+2021-06-30 22:06:449 INFO  WishListPage:67 - Product Item Detail:{}£30.00 £20.00
+2021-06-30 22:06:559 INFO  WishListPage:67 - Product Item Detail:{}Polo T-shirt
+2021-06-30 22:06:629 INFO  WishListPage:67 - Product Item Detail:{}£22.00 – £25.00
+2021-06-30 22:06:736 INFO  WishListPage:67 - Product Item Detail:{}Black pants
+2021-06-30 22:06:805 INFO  WishListPage:67 - Product Item Detail:{}£89.00 – £99.00
+2021-06-30 22:06:806 INFO  StepDef:43 - Able to View My Wishlist
+2021-06-30 22:06:814 INFO  WishListPage:78 - ======================================
+2021-06-30 22:06:815 INFO  WishListPage:79 - 4 Items are there in WishList
+2021-06-30 22:06:820 INFO  WishListPage:81 - ======================================
+2021-06-30 22:06:827 INFO  WishListPage:87 - Able to get Lowest Item Price:{}20.0
+2021-06-30 22:06:948 INFO  StepDef:59 - Able to Add lowest price item into My Cart
+2021-06-30 22:06:657 INFO  StepDef:65 - Able to Add Item gest added in Cart & Total Details get displayed
+2021-06-30 22:06:170 INFO  ServiceHook:33 - ******************************************** END OF TEST SCENARIO: select lowest price item in cart **************************************
+

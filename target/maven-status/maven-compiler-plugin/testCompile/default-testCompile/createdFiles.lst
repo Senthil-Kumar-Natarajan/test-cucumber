@@ -1,0 +1,5 @@
+com/test/bdd/servicetesting/stepDefinition/ServiceHook.class
+com/test/bdd/servicetesting/testRunner/TestRunner.class
+com/test/bdd/servicetesting/UtilityHelper/UtilHelper.class
+com/test/bdd/servicetesting/stepDefinition/StepDef.class
+com/test/bdd/servicetesting/AppTest.class
