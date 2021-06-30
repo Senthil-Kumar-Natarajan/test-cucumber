@@ -1,0 +1,29 @@
+version: 0.2
+env:
+  shell: /bin/bash
+  variables:
+    CHROME_VERSION: latest
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+    commands:
+      - echo Testing
+
+  build:
+    commands:
+      - wget https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${CHROME_VERSION}_amd64.deb
+      - dpkg -i google-chrome-stable_${CHROME_VERSION}_amd64.deb
+      - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+      - echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | tee /etc/apt/sources.list.d/google-chrome.list
+      - google-chrome --version   
+      - chmod -R 777 ./
+      - echo $PATH
+      - echo $PROFILE
+      - mvn clean install --no-transfer-progress
+reports:
+  arn:aws:codebuild:eu-west-1:xxx:
+    files:
+      - "*.json"
+    base-directory: target
+    file-format: CucumberJson
